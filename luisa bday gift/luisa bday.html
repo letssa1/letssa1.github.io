@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>luisa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -26,18 +27,26 @@
     </div>
         
   <!-- Gift Image -->
-  <img id="giftImage" src="https://i.imgur.com/Mv8o14z.png" alt="Gift Box">
-
-  <!-- Message -->
-  <div class="message" id="message">
-    🎉 Happy Birthday! You’re amazing! 🎂
-  </div>
+  <img id="giftImage" src="gift-closed.png" alt="Gift Box">
 
   <!-- Surprises Container -->
   <div id="surprises">
-    <img src="surprise1.png" class="surprise-img" alt="Surprise 1">
-    <img src="surprise2.png" class="surprise-img" alt="Surprise 2">
-    <img src="surprise3.png" class="surprise-img" alt="Surprise 3">
+    <img id="toothless" src="toothless.png" class="surprise-img" alt="">
+    <img id="toothic" src="toothic.png" class="surprise-img" alt="">
+    <img id="laufey" src="laufey.png" class="surprise-img" alt="">
+    <img id="tentgs" src="10-things.jpg" class="surprise-img" alt="">
+    <img id="toAll" src="to-all.jpg" class="surprise-img" alt="">
+    <img id="timebomb" src="timebomb.png" class="surprise-img" alt="">
+    <img id="daisy" src="daisy.png" class="surprise-img" alt="">
+    <img id="lego" src="lego.png" class="surprise-img" alt="">
+    <img id="batman" src="batman.png" class="surprise-img" alt="">
+    <img id="sun" src="sun.png" class="surprise-img" alt="">
+    <img id="tangled" src="tangled.jpg" class="surprise-img" alt="">
+    <img id="house" src="house.png" class="surprise-img" alt="">
+    <img id="velvet" src="velvet.png" class="surprise-img" alt="">
+     <img id="flower" src="flower.png" class="surprise-img" alt="">
+    
+    
     <!-- Add more images as needed -->
   </div>
 
@@ -47,7 +56,6 @@
 
 
 <style>
-        
     body {
             margin: 0;
             padding: 0;
@@ -87,88 +95,211 @@
             justify-content: center;
             position: absolute;
             top: 6vw;
-            width: 5px;
-            scale: .7;
+            width: 7px;
+            scale: 1;
             left: 50vw;
             transform: translateX(-50%);
             
             z-index: 1;
          }
 
+        
     
     #ily {
         position: absolute;
         z-index: 2;
         left: 45vw;
-        top: 10vw;
+        top: 11vw;
         height: auto;
     }
 
 
     #giftImage {
         position: absolute;
-        top: 10vw;
-        left: 30vw;
+        scale: .7;
+        top: 15vw;
+        left: 40vw;
       width: 20vw;
       cursor: pointer;
-      transition: transform 0.3s;
+        transition: transform 0.3s;
     }
 
     #giftImage:hover {
-      transform: scale(1.05);
+    transform: scale(1.05);
     }
 
-    #surprises {
-      margin-top: 30px;
-      display: none;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
+
+    #toothless{
+
+      display: block;
+      position: absolute;
+      top: 10vw;
+      left: 34vw;
+      width: 8vw;
+      animation: fadeInBottomRight 2s forwards;
+
     }
 
-    .surprise-img {
-      width: 120px;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
+    #laufey {
+      display: block;
+      position: absolute;
+      top: 10vw;
+      left: 60vw;
+      width: 12vw;
+      animation: fadeInBottomLeft 1s forwards;
     }
 
-    .surprise-img:hover {
-      transform: scale(1.1);
+    #tentgs {
+      
+      display: block;
+      position: absolute;
+      top: 25vw;
+      left: 37vw;
+      width: 7vw;
+      animation: fadeInRight 1s forwards;
+
     }
 
-    .message {
-      margin-top: 20px;
-      font-size: 1.5rem;
-      color: #c2185b;
-      display: none;
+    #toAll {
+      
+      display: block;
+      position: absolute;
+      top: 20vw;
+      left: 32vw;
+      width: 6vw;
+      animation: fadeInRight 2s forwards;
+
     }
+
+    #toothic {
+      display: block;
+      position: absolute;
+      top: 18vw;
+      left: 38vw;
+      width: 6vw;
+      animation: fadeInBottomRight 1.5s forwards;
+
+    }
+
+     #timebomb {
+      display: block;
+      position: absolute;
+      top: 12vw;
+      left: 42vw;
+      width: 5vw;
+      animation: fadeInBottomRight 1.5s forwards;
+
+    }
+    #daisy {
+      display: block;
+      position: absolute;
+      top: 29vw;
+      left: 31vw;
+      width: 6vw;
+      animation: fadeInRight 1.5s forwards;
+
+    }
+
+    
+    #batman {
+      display: block;
+      position: absolute;
+      top: 9vw;
+      left: 55vw;
+      width: 8vw;
+      animation: fadeInBottomLeft 1.5s forwards;
+
+    }
+
+    
+    #lego {
+      display: block;
+      position: absolute;
+      top: 32vw;
+      left: 42vw;
+      width: 6vw;
+      animation: fadeInRight 1.5s forwards;
+
+    }
+
+     
+    #house {
+      display: block;
+      position: absolute;
+      top: 32vw;
+      left: 53vw;
+      width: 8vw;
+      animation: fadeInTopLeft 1.5s forwards;
+
+    }
+
+      
+    #tangled {
+      display: block;
+      position: absolute;
+      top: 20vw;
+      left: 60vw;
+      width: 5vw;
+      animation: fadeInLeft 1.5s forwards;
+
+    }
+
+    #sun {
+      display: block;
+      position: absolute;
+      top: 9vw;
+      left: 60vw;
+      width: 3.5vw;
+      animation: fadeInLeft 1.5s forwards;
+
+    }
+     #velvet {
+      display: block;
+      position: absolute;
+      top: 26vw;
+      left: 58vw;
+      width: 11vw;
+      animation: fadeInLeft 1.5s forwards;
+
+    }
+
+    #flower {
+      display: block;
+      position: absolute;
+      top: 32vw;
+      left: 48vw;
+      width: 5vw;
+      animation: fadeInLeft 1.5s forwards;
+
+    }
+
+
+
+
+
+
+
+
+
+
+ 
   </style>
 
 
 
   <script>
   const giftImage = document.getElementById('giftImage');
-const message = document.getElementById('message');
-const surprises = document.getElementById('surprises');
+   const surprises = document.getElementById('surprises');
+  let isOpened = false;
 
-// start with the gift closed
-let isOpened = false;
-
-giftImage.addEventListener('click', () => {
-  if (!isOpened) {
-    giftImage.src = 'gift-open.png';         // open image
-    message.style.display = 'block';         // show message
-    surprises.style.display = 'flex';        // show surprises
-  } else {
-    giftImage.src = 'gift-closed.png';       // back to closed image
-    message.style.display = 'none';          // hide message
-    surprises.style.display = 'none';        // hide surprises
-  }
-
-  isOpened = !isOpened; // toggle the state
-});
-
-
+  giftImage.addEventListener('click', () => {
+    if (!isOpened) {
+      giftImage.src = 'gift-open.png'; // open image
+      surprises.style.display = 'block'; // show surprises
+    } else {
+      giftImage.src = 'gift-closed.png'; // closed image
+      surprises.style.display = 'none'; 
+    }
+    isOpened = !isOpened;
+  });
   </script>
