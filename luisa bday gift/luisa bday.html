@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>luisa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="text">
+       <img src="https://www.gigaglitters.com/created/TlUXJGPnvy.gif" alt=""> 
+    </div>
+
+    <div class="container"> 
+
+<img src="https://i.pinimg.com/736x/2c/9c/63/2c9c638d6b64f79f9398caf308f03219.jpg" alt="">
+    </div>
+
+    <div class="container2">
+    <img src="https://i.pinimg.com/1200x/8f/8b/87/8f8b879e5b6bd3b66b0de9dd7fc95e59.jpg" alt="">
+    </div>
+
+    <div>
+        <img id="ily" src="https://blinkies.cafe/b/blinkiesCafe-Zs.gif" alt="">
+    </div>
+        
+  <!-- Gift Image -->
+  <img id="giftImage" src="https://i.imgur.com/Mv8o14z.png" alt="Gift Box">
+
+  <!-- Message -->
+  <div class="message" id="message">
+    🎉 Happy Birthday! You’re amazing! 🎂
+  </div>
+
+  <!-- Surprises Container -->
+  <div id="surprises">
+    <img src="surprise1.png" class="surprise-img" alt="Surprise 1">
+    <img src="surprise2.png" class="surprise-img" alt="Surprise 2">
+    <img src="surprise3.png" class="surprise-img" alt="Surprise 3">
+    <!-- Add more images as needed -->
+  </div>
+
+</body>
+</html>
+
+
+
+<style>
+        
+    body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(219, 227, 229);
+        overflow: hidden;
+         }
+
+        .container {
+            display: flex;
+             scale: .7;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: -5vw;
+            z-index: 0;
+            opacity:0.8;
+    
+         }
+
+        .container2 {
+            scale: .3;
+             width: 1vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            mix-blend-mode: multiply;
+            top: -15vw;
+            left: 50vw;
+            z-index: 0;
+            opacity:0.8;
+    
+         }
+
+         .text {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 6vw;
+            width: 5px;
+            scale: .7;
+            left: 50vw;
+            transform: translateX(-50%);
+            
+            z-index: 1;
+         }
+
+    
+    #ily {
+        position: absolute;
+        z-index: 2;
+        left: 45vw;
+        top: 10vw;
+        height: auto;
+    }
+
+
+    #giftImage {
+        position: absolute;
+        top: 10vw;
+        left: 30vw;
+      width: 20vw;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    #giftImage:hover {
+      transform: scale(1.05);
+    }
+
+    #surprises {
+      margin-top: 30px;
+      display: none;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .surprise-img {
+      width: 120px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .surprise-img:hover {
+      transform: scale(1.1);
+    }
+
+    .message {
+      margin-top: 20px;
+      font-size: 1.5rem;
+      color: #c2185b;
+      display: none;
+    }
+  </style>
+
+
+
+  <script>
+  const giftImage = document.getElementById('giftImage');
+const message = document.getElementById('message');
+const surprises = document.getElementById('surprises');
+
+// start with the gift closed
+let isOpened = false;
+
+giftImage.addEventListener('click', () => {
+  if (!isOpened) {
+    giftImage.src = 'gift-open.png';         // open image
+    message.style.display = 'block';         // show message
+    surprises.style.display = 'flex';        // show surprises
+  } else {
+    giftImage.src = 'gift-closed.png';       // back to closed image
+    message.style.display = 'none';          // hide message
+    surprises.style.display = 'none';        // hide surprises
+  }
+
+  isOpened = !isOpened; // toggle the state
+});
+
+
+  </script>
